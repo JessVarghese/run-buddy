@@ -16,3 +16,4 @@ Made with ❤️ by [Jess Varghese]
 --
 
 ### ©️2019 Run Buddy, Inc 
+---
