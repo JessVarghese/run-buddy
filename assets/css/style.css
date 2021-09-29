@@ -467,9 +467,6 @@ justify-content: space-around;
   .contact-info > * {
     flex: 0 100%;
   }
-.contact-form {
-  order: 3;
-}
   
 }
 
