@@ -18,6 +18,16 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../../assets/images/hero-bg.jpeg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+ 
       }
 
   header h1 {
@@ -45,7 +55,7 @@ body {
    list-style: none;
   }
 
-  header nav ul li a {
+  header nav ul li a:hover {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -85,11 +95,12 @@ body {
 .hero {
   background-image: url(../../assets/images/hero-bg.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
 }
 
 .hero-form {
@@ -139,14 +150,19 @@ border-radius: 15px;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  background-color: rgba(255,255,255,0.75);
+}
 
+.form-input:focus {
+  background-color: rgba(255,255,255,1);
+  outline: none;
 }
 
 .hero-form label {
   margin:0 5px;
 }
 
-.hero-form button {
+.hero-form button:hover {
   font-size: 16px;
   padding: 10px 20px;
   color: #fce138;
@@ -219,12 +235,19 @@ border-radius: 15px;
   margin: 50px auto;
   padding-bottom: 50px; 
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display:flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
 }
 
 .step-info {
@@ -326,6 +349,7 @@ justify-content: space-around;
   flex-wrap: wrap;
 }
 
+
 .contact-info p, 
 .contact-info address {
   margin: 20px 0;
@@ -353,10 +377,15 @@ justify-content: space-around;
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
 
 }
 
-.contact-form button {
+.contact-form input, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+}
+
+.contact-form button:hover {
   width: 100%;
   border: none;
   background: #fce138;
@@ -382,6 +411,7 @@ justify-content: space-around;
     padding-bottom: 0;
     justify-content: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
   }
 
   header h1 {
