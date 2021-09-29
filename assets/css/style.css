@@ -149,10 +149,6 @@ margin: 3.5%;
 
 /* HERO STYLE END */
 
-.intro {
-  text-align:center;
-}
-
 .intro h2 {
   /* remove this entire code*/
 
@@ -164,10 +160,10 @@ margin: 3.5%;
   color: #39a6b2;
   width: 80%;
   font-size: 20px;
+  text-align: center;
 }
 
 .steps {
-  text-align: center;
   background: #fce138;
 }
 
@@ -179,9 +175,10 @@ margin: 3.5%;
 .section-title {
   font-size: 55px;
   color: #024e76;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
 .primary-border {
@@ -217,7 +214,7 @@ margin: 3.5%;
 }
 
 .trainers {
-  text-align: center;
+
 }
 
 .trainer {
@@ -266,7 +263,6 @@ margin: 3.5%;
 /* REACH OUT STYLES START */
 
 .contact {
-  text-align: center;
   background-color: #024e76;
 }
 
@@ -307,3 +303,7 @@ margin: 3.5%;
 }
 
 /* REACH OUT STYLES END */
+
+.flex-row {
+  display: flex;
+}
